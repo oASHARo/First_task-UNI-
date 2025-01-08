@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration | FitLife Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header Section for Registration -->
+    <header class="registration-header">
+        <div class="registration-logo">
+            <img src="{{ url_for('static', filename='images/OIP (4).jpg') }}" alt="Logo" class="logo-img">
+        </div>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <h2 class="registration-title">Register for FitLife Gym</h2>
+        
+        <div class="registration-form-container">
+            <form action="#" method="post" class="registration-form">
+                <label for="user-name">Full Name:</label>
+                <input type="text" id="user-name" name="full-name" class="input-field" required>
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="email" class="input-field" required>
+
+                <label for="user-password">Password:</label>
+                <input type="password" id="user-password" name="password" class="input-field" required>
+
+                <label for="user-confirm-password">Confirm Password:</label>
+                <input type="password" id="user-confirm-password" name="confirm-password" class="input-field" required>
+
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            
+            <!-- Link to Login -->
+            <p class="login-link-text">Already have an account? <a href="/login" class="login-link">Login here</a></p>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <p>MADE BY: ASHAR ALI KHAN LODHI</p>
+    </footer>
+</body>
+</html>

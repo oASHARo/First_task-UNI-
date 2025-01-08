@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery | FitLife Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="custom-gallery-header">
+        <div class="custom-gallery-logo">
+            <img src="{{ url_for('static', filename='images/OIP (4).jpg') }}" alt="Logo" class="custom-logo-img">
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="custom-gallery-section">
+        <h2 class="custom-gallery-title">FitLife Gym Gallery</h2>
+        <p class="custom-gallery-description">Check out some moments from our gym activities!</p>
+        
+        <!-- Gallery Images -->
+        <div class="custom-gallery-container">
+            <!-- Image 1 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="Image 1" class="custom-gallery-img">
+            </div>
+            <!-- Image 2 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="Image 2" class="custom-gallery-img">
+            </div>
+            <!-- Image 3 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery3.jpeg') }}" alt="Image 3" class="custom-gallery-img">
+            </div>
+            <!-- Image 4 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery4.jpeg') }}" alt="Image 4" class="custom-gallery-img">
+            </div>
+            <!-- Image 5 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery5.jpg') }}" alt="Image 5" class="custom-gallery-img">
+            </div>
+            <!-- Image 6 -->
+            <div class="custom-gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery6.jpeg') }}" alt="Image 6" class="custom-gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer-section">
+        <p>MADE BY: ASHAR ALI KHAN LODHI</p>
+    </footer>
+</body>
+</html>

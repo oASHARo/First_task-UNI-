@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | FitLife Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/OIP (4).jpg') }}" alt="Logo" style="width: 50px; height: 50px; margin-right: 20px; border-radius: 50px;">
+            <h1>FitLife Gym</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="membership">Membership</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Home Page) -->
+    <section class="hero">
+        <h2>Welcome to FitLife Gym</h2>
+        <p>Your fitness journey starts here. Train hard, stay fit, and transform your life.</p>
+        <a href="membership.html" class="cta-button">Get Started Today</a>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h3>Why Choose FitLife Gym?</h3>
+        <div class="features">
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/Certified trainer.jpg') }}" alt="Certified Trainers">
+                <h4>Certified Trainers</h4>
+                <p>Our trainers are experts who can guide you every step of the way, ensuring you reach your goals safely and effectively.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/State-of-the-art Equipment.jpg') }}" alt="State-of-the-art Equipment">
+                <h4>State-of-the-art Equipment</h4>
+                <p>We provide top-quality gym equipment to ensure you get the best workout experience possible.</p>
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/Group Classes.avif') }}" alt="Group Classes">
+                <h4>Group Classes</h4>
+                <p>Join our group classes for a fun and motivating way to get fit while meeting new people.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>MADE BY: ASHAR ALI KHAN LODHI</p>
+    </footer>
+
+</body>
+</html>
